@@ -1,0 +1,123 @@
+/* INICIO CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f1f5f9;
+    color: #83858c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+/* LOGIN y PANEL PRINCIPAL */
+#login,
+#panelPrincipal {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.panelOculto {
+    display: none;
+}
+
+h2,
+h3 {
+    text-align: center;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+/* FORMULARIOS */
+input,
+select,
+button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+input,
+select {
+    border: 1px solid #cbd5e1;
+}
+
+button {
+    background-color: #8B80F9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #8B80F9;
+}
+
+/* MENSAJES */
+.mensajeError {
+    color: #dc2626;
+    text-align: center;
+    font-weight: bold;
+}
+
+#mensajePago,
+#mensajeTransferencia {
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+/* LISTA DE TURNOS */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+        background-color: #e2e8f0;
+        margin-bottom: 10px;
+        padding: 12px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+    li button {
+        position: static;
+        right: 12px;
+        top: 12px;
+        background-color: #ff0000;
+        color: white;
+        padding: 6px 10px;
+        font-size: 0.9em;
+    }
+
+    li button:hover {
+        background-color: #ff00d9;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 500px) {
+        body {
+            padding: 20px 10px;
+        }
+
+        #login,
+        #panelPrincipal {
+            padding: 20px;
+        }
+    }
