@@ -1,0 +1,38 @@
+[
+    {
+        "nombre": "Dra. Valiria Sotelo",
+        "especialidad": "Cirugia General",
+        "horarios": [
+            "09:00",
+            "10:30",
+            "12:00"
+        ]
+    },
+    {
+        "nombre": "Dr. Fernando Ledesma",
+        "especialidad": "Clínica médica",
+        "horarios": [
+            "08:00",
+            "11:00",
+            "15:30"
+        ]
+    },
+    {
+        "nombre": "Lic. Victoria Ruiz",
+        "especialidad": "Vacunación",
+        "horarios": [
+            "10:00",
+            "13:20",
+            "16:00"
+        ]
+    },
+    {
+        "nombre": "Lic. Miranda Feimann",
+        "especialidad": "Pediatria",
+        "horarios": [
+            "10:00",
+            "13:00",
+            "14:50"
+        ]
+    }
+]

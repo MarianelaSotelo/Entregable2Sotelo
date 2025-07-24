@@ -63,7 +63,15 @@ button {
 
 button:hover {
     background-color: #8B80F9;
+
 }
+
+.especialista {
+    color: #8B80F9;
+    font-weight: bold;
+    font-style: italic;
+}
+
 
 /* MENSAJES */
 .mensajeError {
@@ -85,39 +93,39 @@ ul {
 }
 
 li {
-        background-color: #e2e8f0;
-        margin-bottom: 10px;
-        padding: 12px;
-        border-radius: 6px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+    background-color: #e2e8f0;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+li button {
+    position: static;
+    right: 12px;
+    top: 12px;
+    background-color: #ff0000;
+    color: white;
+    padding: 6px 10px;
+    font-size: 0.9em;
+}
+
+li button:hover {
+    background-color: #ff00d9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+    body {
+        padding: 20px 10px;
     }
 
-
-    li button {
-        position: static;
-        right: 12px;
-        top: 12px;
-        background-color: #ff0000;
-        color: white;
-        padding: 6px 10px;
-        font-size: 0.9em;
+    #login,
+    #panelPrincipal {
+        padding: 20px;
     }
-
-    li button:hover {
-        background-color: #ff00d9;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 500px) {
-        body {
-            padding: 20px 10px;
-        }
-
-        #login,
-        #panelPrincipal {
-            padding: 20px;
-        }
-    }
+}

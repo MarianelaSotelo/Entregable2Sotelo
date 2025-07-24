@@ -12,8 +12,8 @@
     <!-- LOGIN -->
     <div id="login">
         <h2>Iniciar Sesión</h2>
-        <input type="text" id="inputUsuario" placeholder="Usuario"/>
-        <input type="password" id="inputClave" placeholder="Contraseña"/>
+        <input type="text" id="inputUsuario" placeholder="Usuario" />
+        <input type="password" id="inputClave" placeholder="Contraseña" />
         <button id="botonLogin">Ingresar</button>
         <p id="mensajeLogin" class="mensajeError"></p>
     </div>
@@ -23,22 +23,23 @@
         <h2>Reservar un turno</h2>
         <form id="formTurno">
             <input type="text" id="nombre" placeholder="Nombre completo" required />
-            <select id="servicio" required>
-                <option value="">-- Seleccioná un servicio --</option>
-                <option value="Consulta médica">Consulta médica</option>
-                <option value="Vacunación">Vacunación</option>
-                <option value="Análisis de laboratorio">Análisis de laboratorio</option>
+            <select id="especialidad" required>
+                <option value="">-- Seleccioná una especialidad --</option>
+            </select>
+            <select id="especialista" required>
+                <option value="">-- Seleccioná un especialista --</option>
             </select>
             <input type="date" id="fecha" required />
-            <input type="time" id="hora" required />
+            <select id="horario" required>
+                <option value="">-- Seleccioná un horario disponible --</option>
+            </select>
             <button type="submit">Reservar</button>
         </form>
-
         <h3>Turnos reservados</h3>
         <ul id="listaTurnos"></ul>
     </div>
-
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
